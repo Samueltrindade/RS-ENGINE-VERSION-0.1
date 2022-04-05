@@ -11,22 +11,22 @@ using StringTools;
 
 class Achievements {
 	public static var achievementsStuff:Array<Dynamic> = [ //Name, Description, Achievement save tag, Hidden achievement
-		["Freaky on a Friday Night",	"Play on a Friday... Night.",						'friday_night_play',	 true],
-		["She Calls Me Daddy Too",		"Beat Week 1 on Hard with no Misses.",				'week1_nomiss',			false],
-		["No More Tricks",				"Beat Week 2 on Hard with no Misses.",				'week2_nomiss',			false],
-		["Call Me The Hitman",			"Beat Week 3 on Hard with no Misses.",				'week3_nomiss',			false],
-		["Lady Killer",					"Beat Week 4 on Hard with no Misses.",				'week4_nomiss',			false],
-		["Missless Christmas",			"Beat Week 5 on Hard with no Misses.",				'week5_nomiss',			false],
-		["Highscore!!",					"Beat Week 6 on Hard with no Misses.",				'week6_nomiss',			false],
-		["You'll Pay For That...",		"Beat Week 7 on Hard with no Misses.",				'week7_nomiss',			 true],
-		["What a Funkin' Disaster!",	"Complete a Song with a rating lower than 20%.",	'ur_bad',				false],
-		["Perfectionist",				"Complete a Song with a rating of 100%.",			'ur_good',				false],
-		["Roadkill Enthusiast",			"Watch the Henchmen die over 100 times.",			'roadkill_enthusiast',	false],
-		["Oversinging Much...?",		"Hold down a note for 10 seconds.",					'oversinging',			false],
-		["Hyperactive",					"Finish a Song without going Idle.",				'hype',					false],
-		["Just the Two of Us",			"Finish a Song pressing only two keys.",			'two_keys',				false],
-		["Toaster Gamer",				"Have you tried to run the game on a toaster?",		'toastie',				false],
-		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",	'debugger',				 true]
+		["Na Sexta De Noite",	"tendeu a referencia ne?.",						'friday_night_play',	 true],
+		["Ela Me Chama De Pai tbm",		"Derrote o pai sem erro.",				'week1_nomiss',			false],
+		["SEM TRUQUES SEU BAITOLA",				"semana 2 sem erro.",				'week2_nomiss',			false],
+		["Me Chame De pistoleiro",			"pico ferrado sem erro.",				'week3_nomiss',			false],
+		["mae dela",					"semana 4 sem erro.",				'week4_nomiss',			false],
+		["Natal Sem erro",			"Os pais voltaram.",				'week5_nomiss',			false],
+		["AI MEUS DEDOS!!",					"Sem pai(lol) sem erro.",				'week6_nomiss',			false],
+		["Rayla...",		"gosto de tu(agora pros fans:tenho 13 ano).",				'week7_nomiss',			 true],
+		["Mas que disastre!",	"Complete uma musica abaixo de 20%.",	'ur_bad',				false],
+		["(tsc) nice",				"Complete uma musica com 100% confio em ti.",			'ur_good',				false],
+		["olha MT sangue",			"veja os magro morrer 100 vezes.",			'roadkill_enthusiast',	false],
+		["tu canta muito",		"Aperte uma nota por 10 segundos.",					'oversinging',			false],
+		["Hiper ativo",					"Complete uma musica sem fazer idle.",				'hype',					false],
+		["so nos dois",			"Aperte apenas duas notas.",			'two_keys',				false],
+		["Gameboy",				"quer rodar isso em um gameboy?",		'toastie',				false],
+		["HACK",					"Passe o \"Test\" do chart editor.",	'debugger',				 true]
 	];
 	public static var achievementsMap:Map<String, Bool> = new Map<String, Bool>();
 
@@ -34,7 +34,7 @@ class Achievements {
 	public static function unlockAchievement(name:String):Void {
 		FlxG.log.add('Completed achievement "' + name +'"');
 		achievementsMap.set(name, true);
-		FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+		FlxG.sound.play(Paths.sound('secretSound'), 0.7);
 	}
 
 	public static function isAchievementUnlocked(name:String) {
