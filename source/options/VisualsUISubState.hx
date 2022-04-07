@@ -43,14 +43,14 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		var option:Option = new Option('esconder HUD',
 			'se marcado, esconde o HUD.',
-			'esconder HUD',
+			'hideHud',
 			'bool',
 			false);
 		addOption(option);
 		
 		var option:Option = new Option('Tipo de relogin:',
 			"Qual tipo de relogio vc quer?",
-			'tipo de relogin',
+			'timeBarType',
 			'string',
 			'Tempo faltando',
 			['Tempo faltando', 'Tempo que passou', 'Nome da musica', 'Disativado']);
@@ -58,28 +58,28 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		var option:Option = new Option('Luz piscante',
 			"DESLIGA SE TIVER EPILEPSIA!",
-			'Luz piscante',
+			'flashing',
 			'bool',
 			true);
 		addOption(option);
 
 		var option:Option = new Option('Zoom na camera',
 			"Se desligado, nao vai dar zoom.",
-			'Zoom na camera',
+			'camZooms',
 			'bool',
 			true);
 		addOption(option);
 
 		var option:Option = new Option('Zoom no texto no ritimo',
 			"Se desligado, desliga o texto dando zoom quando acertar uma nota.",
-			'Zoom no texto no ritimo',
+			'scoreZoom',
 			'bool',
 			true);
 		addOption(option);
 
 		var option:Option = new Option('Transparencia da barra de vida',
 			'Auto explicativo certo?.',
-			'Transparencia da barra de vida',
+			'healthBarAlpha',
 			'percent',
 			1);
 		option.scrollSpeed = 1.6;
@@ -91,7 +91,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		
 		var option:Option = new Option('Contador de FPS',
 			'Pra que explicar?.',
-			'Contador de FPS',
+			'showFPS',
 			'bool',
 			#if android false #else true #end);
 		addOption(option);
@@ -99,7 +99,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		
 		var option:Option = new Option('Som de pause:',
 			"Qual som vc quer tocando no menu pause?",
-			'Som de pause',
+			'pauseMusic',
 			'string',
 			'Tea Time',
 			['Nenhum', 'Breakfast', 'Tea Time','Breakfast-remix','uwa']);
