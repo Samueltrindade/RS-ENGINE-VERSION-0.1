@@ -34,8 +34,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		title = 'Gameplay Settings';
 		rpcTitle = 'Gameplay Settings Menu'; //for Discord Rich Presence
 
-		var option:Option = new Option('Controller Mode',
-			'Check this if you want to play with\na controller instead of using your Keyboard.',
+		var option:Option = new Option('Modo de controle',
+			'Olha isso se tu usa um controle.',
 			'controllerMode',
 			'bool',
 			#if android true #else false #end);
@@ -43,35 +43,35 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 
 		//I'd suggest using "Downscroll" as an example for making your own option since it is the simplest here
 		var option:Option = new Option('Downscroll', //Name
-			'If checked, notes go Down instead of Up, simple enough.', //Description
+			'Nexxy e seus filhos usam isso.', //Description
 			'downScroll', //Save data variable name
 			'bool', //Variable type
 			false); //Default value
 		addOption(option);
 
 		var option:Option = new Option('Middlescroll',
-			'If checked, your notes get centered.',
+			'Eu e talvez meus fas usam isso.',
 			'middleScroll',
 			'bool',
 			false);
 		addOption(option);
 
 		var option:Option = new Option('Ghost Tapping',
-			"If checked, you won't get misses from pressing keys\nwhile there are no notes able to be hit.",
+			"Qm n usa isso?.",
 			'ghostTapping',
 			'bool',
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Disable Reset Button',
-			"If checked, pressing Reset won't do anything.",
+		var option:Option = new Option('Desligar o botao de reset',
+			"ta escrito ae.",
 			'noReset',
 			'bool',
 			false);
 		addOption(option);
 
-		var option:Option = new Option('Hitsound Volume',
-			'Funny notes does \"Tick!\" when you hit them."',
+		var option:Option = new Option('OSU!REFERENCE??',
+			'Tap tap.',
 			'hitsoundVolume',
 			'percent',
 			0);
@@ -82,8 +82,8 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.changeValue = 0.1;
 		option.decimals = 1;
 
-		var option:Option = new Option('Rating Offset',
-			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',
+		var option:Option = new Option('Inutil',
+			'Mais inutil que a minha vida...SIM SIM SIM.',
 			'ratingOffset',
 			'int',
 			0);
@@ -127,7 +127,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
 		var option:Option = new Option('Safe Frames',
-			'Changes how many frames you have for\nhitting a note earlier or late.',
+			'Quantos frames tu quer apertar?mais cedo ou mais tarde?.',
 			'safeFrames',
 			'float',
 			10);
